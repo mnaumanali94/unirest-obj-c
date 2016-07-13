@@ -222,9 +222,6 @@
 }
 
 + (UNIHTTPResponse*) getResponse:(NSURLResponse*) response data:(NSData*) data {
-    if (data == nil) {
-        return nil;
-    }
     
     NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*) response;
     
